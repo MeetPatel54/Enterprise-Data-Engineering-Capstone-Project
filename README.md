@@ -1,4 +1,4 @@
-````markdown
+
 # Enterprise Aviation Data Platform (EADP)
 
 ## UC8 — Enterprise Aviation Data Platform
@@ -126,7 +126,7 @@ Advanced data profiling, data warehouse implementation, governance, lineage, and
 
 # 6. High-Level Architecture
 
-```text
+
                          AIRLINE SOURCE SYSTEMS
                                   |
              +--------------------+--------------------+
@@ -181,7 +181,7 @@ Advanced data profiling, data warehouse implementation, governance, lineage, and
                                       +---------------+
                                       |    POWER BI   |
                                       +---------------+
-````
+
 
 ---
 
@@ -1853,6 +1853,3 @@ The project combines **data ingestion, ETL, PostgreSQL, Python/Pandas, data qual
 This project is based on **UC8: Enterprise Aviation Data Platform (EADP): Building a Unified Airline Operations & Passenger Analytics Platform**.
 
 The use case defines the overall objective, technology stack, Sprint 0 activities and deliverables, and Sprint 1 data discovery and ingestion requirements. Sprint 1 specifically requires source-system analysis, a Data Dictionary, Pentaho ingestion for CSV/Excel/JSON/XML/SQL data, PostgreSQL staging, logging, exception handling, and Git commit history.
-
-```
-```
