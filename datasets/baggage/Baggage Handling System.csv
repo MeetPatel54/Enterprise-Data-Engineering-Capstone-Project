@@ -1,0 +1,102 @@
+YEAR,MONTH,QUARTER,AIRLINE_ID,CARRIER,CARRIER_NAME,UNIQUE_CARRIER,UNIQUE_CARRIER_NAME,PASSENGERS,MISHANDLED_BAGGAGE,ENPLANED_BAGGAGE,MISHANDLED_WCHR_SCTR,ENPLANED_WCHR_SCTR,FORM_TYPE
+2026,1,1,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,23287,6692998,207,16848,FORM-1
+2026,1,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,7523,1555245,7,2645,FORM-2
+2026,1,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,30851,6226920,37,9122,FORM-1
+2026,1,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,25694,3065535,33,2902,FORM-2
+2026,1,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,55194,5292104,97,7530,FORM-1
+2026,1,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,3032,452997,3,431,FORM-2
+2026,1,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,14980,2168611,43,3867,FORM-1
+2026,1,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,16679,1579832,31,2127,FORM-2
+2026,1,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,38278,4675309,95,8168,FORM-1
+2026,1,1,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,18309,2289966,33,3065,FORM-1
+2026,1,1,20368,G4,Allegiant Air,G4,Allegiant Air,,529,460807,19,2224,FORM-1
+2026,1,1,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,5685,888886,11,687,FORM-1
+2026,1,1,20398,MQ,Envoy Air,MQ,Envoy Air,,7884,784707,9,995,FORM-1
+2026,1,1,20409,B6,JetBlue Airways,B6,JetBlue Airways,,4099,1109842,32,2506,FORM-1
+2026,1,1,20416,NK,Spirit Air Lines,NK,Spirit Air Lines,,2095,458551,19,1589,FORM-1
+2026,1,1,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,4356,740262,61,3299,FORM-1
+2026,1,1,20452,YX,Republic Airline,YX,Republic Airline,,5902,748734,7,853,FORM-1
+2026,2,1,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,20057,6485981,170,15040,FORM-1
+2026,2,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,5346,1496594,4,1750,FORM-2
+2026,2,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,24314,6051112,26,6810,FORM-1
+2026,2,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,17214,2987273,30,2603,FORM-2
+2026,2,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,37715,5129151,104,7110,FORM-1
+2026,2,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,1950,425223,5,406,FORM-2
+2026,2,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,10411,1986572,60,3882,FORM-1
+2026,2,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,11240,1476005,16,1887,FORM-2
+2026,2,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,29891,4319416,80,7088,FORM-1
+2026,2,1,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,13281,2233407,16,2404,FORM-1
+2026,2,1,20368,G4,Allegiant Air,G4,Allegiant Air,,412,481833,13,2248,FORM-1
+2026,2,1,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,3878,896856,10,612,FORM-1
+2026,2,1,20398,MQ,Envoy Air,MQ,Envoy Air,,5021,766315,8,961,FORM-1
+2026,2,1,20409,B6,JetBlue Airways,B6,JetBlue Airways,,3995,1063630,33,2084,FORM-1
+2026,2,1,20416,NK,Spirit Air Lines,NK,Spirit Air Lines,,2021,440053,15,1418,FORM-1
+2026,2,1,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,2978,677214,42,3177,FORM-1
+2026,2,1,20452,YX,Republic Airline,YX,Republic Airline,,3720,614176,5,667,FORM-1
+2026,3,1,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,28479,8128169,224,18265,FORM-1
+2026,3,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,7043,1853780,6,2825,FORM-2
+2026,3,1,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,33852,6900528,29,8294,FORM-1
+2026,3,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,21049,3520782,45,3916,FORM-2
+2026,3,1,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,43303,6073679,123,9265,FORM-1
+2026,3,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,2401,494864,3,450,FORM-2
+2026,3,1,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,14712,2335253,42,4331,FORM-1
+2026,3,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,15340,1711955,18,2174,FORM-2
+2026,3,1,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,41099,5240657,118,8951,FORM-1
+2026,3,1,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,16092,2563396,25,2981,FORM-1
+2026,3,1,20368,G4,Allegiant Air,G4,Allegiant Air,,694,701105,11,2929,FORM-1
+2026,3,1,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,5128,1068945,9,894,FORM-1
+2026,3,1,20398,MQ,Envoy Air,MQ,Envoy Air,,6381,883291,17,1440,FORM-1
+2026,3,1,20409,B6,JetBlue Airways,B6,JetBlue Airways,,4277,1374136,34,2711,FORM-1
+2026,3,1,20416,NK,Spirit Air Lines,NK,Spirit Air Lines,,2633,517954,23,1703,FORM-1
+2026,3,1,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,5218,909521,59,4059,FORM-1
+2026,3,1,20452,YX,Republic Airline,YX,Republic Airline,,5090,861614,11,1088,FORM-1
+2026,4,2,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,19565,7399012,203,19910,FORM-1
+2026,4,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,3766,1768377,10,2431,FORM-2
+2026,4,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,17410,6545952,26,8602,FORM-1
+2026,4,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,12073,3355988,44,3693,FORM-2
+2026,4,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,25938,5544406,104,9290,FORM-1
+2026,4,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,1838,469138,3,536,FORM-2
+2026,4,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,9409,2267719,56,4382,FORM-1
+2026,4,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,9555,1601448,29,2936,FORM-2
+2026,4,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,22555,4583773,103,9628,FORM-1
+2026,4,2,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,9210,2381144,32,3637,FORM-1
+2026,4,2,20368,G4,Allegiant Air,G4,Allegiant Air,,753,565540,24,2921,FORM-1
+2026,4,2,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,2959,1039421,9,923,FORM-1
+2026,4,2,20398,MQ,Envoy Air,MQ,Envoy Air,,3970,838571,12,1171,FORM-1
+2026,4,2,20409,B6,JetBlue Airways,B6,JetBlue Airways,,2952,1227425,41,2828,FORM-1
+2026,4,2,20416,NK,Spirit Air Lines,NK,Spirit Air Lines,,1912,442213,20,1551,FORM-1
+2026,4,2,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,3934,796412,54,3745,FORM-1
+2026,4,2,20452,YX,Republic Airline,YX,Republic Airline,,3241,813408,10,1107,FORM-1
+2026,5,2,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,26522,8501637,306,25565,FORM-1
+2026,5,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,4770,1961998,7,3003,FORM-2
+2026,5,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,22476,7331685,49,10579,FORM-1
+2026,5,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,16561,3696784,42,4686,FORM-2
+2026,5,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,37366,6228886,140,11018,FORM-1
+2026,5,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,2876,546886,10,778,FORM-2
+2026,5,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,11746,2579957,77,5017,FORM-1
+2026,5,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,10641,1747264,25,2870,FORM-2
+2026,5,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,27852,5182707,120,11058,FORM-1
+2026,5,2,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,11286,2624425,25,3920,FORM-1
+2026,5,2,20368,G4,Allegiant Air,G4,Allegiant Air,,788,558371,18,2227,FORM-1
+2026,5,2,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,3821,1092951,14,1075,FORM-1
+2026,5,2,20398,MQ,Envoy Air,MQ,Envoy Air,,5817,965813,11,1622,FORM-1
+2026,5,2,20409,B6,JetBlue Airways,B6,JetBlue Airways,,3145,1206946,32,3136,FORM-1
+2026,5,2,20416,NK,Spirit Air Lines,NK,Spirit Air Lines,,58,12014,2,40,FORM-1
+2026,5,2,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,3833,841740,64,4952,FORM-1
+2026,5,2,20452,YX,Republic Airline,YX,Republic Airline,,3811,939901,13,1413,FORM-1
+2026,6,2,19393,WN,Southwest Airlines Co.,WN,Southwest Airlines Co.,,30965,9142632,288,23636,FORM-1
+2026,6,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,5186,1944254,8,2860,FORM-2
+2026,6,2,19790,DL,Delta Air Lines Inc.,DL,Delta Air Lines Inc.,,24119,7503986,42,9860,FORM-1
+2026,6,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,23083,3657984,54,4373,FORM-2
+2026,6,2,19805,AA,American Airlines Inc.,AA,American Airlines Inc.,,52460,6273039,148,11149,FORM-1
+2026,6,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,3070,576655,2,716,FORM-2
+2026,6,2,19930,AS,Alaska Airlines Inc.,AS,Alaska Airlines Inc.,,13638,2787929,77,4763,FORM-1
+2026,6,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,12215,1699588,24,2523,FORM-2
+2026,6,2,19977,UA,United Air Lines Inc.,UA,United Air Lines Inc.,,32516,5251192,130,10556,FORM-1
+2026,6,2,20304,OO,SkyWest Airlines Inc.,OO,SkyWest Airlines Inc.,,13256,2642526,31,3627,FORM-1
+2026,6,2,20368,G4,Allegiant Air,G4,Allegiant Air,,892,706966,17,3284,FORM-1
+2026,6,2,20397,OH,PSA Airlines Inc.,OH,PSA Airlines Inc.,,5260,1057506,13,934,FORM-1
+2026,6,2,20398,MQ,Envoy Air,MQ,Envoy Air,,8650,986065,18,1634,FORM-1
+2026,6,2,20409,B6,JetBlue Airways,B6,JetBlue Airways,,3667,1206598,50,3021,FORM-1
+2026,6,2,20436,F9,Frontier Airlines Inc.,F9,Frontier Airlines Inc.,,4414,851393,88,5123,FORM-1
+2026,6,2,20452,YX,Republic Airline,YX,Republic Airline,,4226,909355,6,1262,FORM-1
