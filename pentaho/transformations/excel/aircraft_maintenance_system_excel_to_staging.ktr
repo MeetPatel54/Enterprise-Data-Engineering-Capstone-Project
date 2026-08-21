@@ -430,7 +430,7 @@
     <created_date>2026/08/21 00:17:40.465</created_date>
     <modified_user>-</modified_user>
     <modified_date>2026/08/21 00:17:40.465</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -488,16 +488,138 @@
   </connection>
   <order>
     <hop>
-      <from>Microsoft Excel input</from>
-      <to>Select values</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Select values</from>
       <to>Table output</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Microsoft Excel input</from>
+      <to>Data validator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Data validator</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Data validator</from>
+      <to>Text file output</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
+  <step>
+    <name>Data validator</name>
+    <type>Validator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <validate_all>Y</validate_all>
+    <concat_errors>N</concat_errors>
+    <concat_separator>|</concat_separator>
+    <validator_field>
+      <name>A/C</name>
+      <validation_name>A/C</validation_name>
+      <max_length/>
+      <min_length>1</min_length>
+      <null_allowed>N</null_allowed>
+      <only_null_allowed>N</only_null_allowed>
+      <only_numeric_allowed>N</only_numeric_allowed>
+      <data_type>String</data_type>
+      <data_type_verified>Y</data_type_verified>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <max_value/>
+      <min_value/>
+      <start_string/>
+      <end_string/>
+      <start_string_not_allowed/>
+      <end_string_not_allowed/>
+      <regular_expression/>
+      <regular_expression_not_allowed/>
+      <error_code>AC001</error_code>
+      <error_description/>
+      <is_sourcing_values>N</is_sourcing_values>
+      <sourcing_step/>
+      <sourcing_field/>
+      <allowed_value/>
+    </validator_field>
+    <validator_field>
+      <name>PER FC</name>
+      <validation_name>per_fc</validation_name>
+      <max_length/>
+      <min_length/>
+      <null_allowed>Y</null_allowed>
+      <only_null_allowed>N</only_null_allowed>
+      <only_numeric_allowed>N</only_numeric_allowed>
+      <data_type>String</data_type>
+      <data_type_verified>Y</data_type_verified>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <max_value/>
+      <min_value/>
+      <start_string/>
+      <end_string/>
+      <start_string_not_allowed/>
+      <end_string_not_allowed/>
+      <regular_expression/>
+      <regular_expression_not_allowed/>
+      <error_code>AC002</error_code>
+      <error_description/>
+      <is_sourcing_values>N</is_sourcing_values>
+      <sourcing_step/>
+      <sourcing_field/>
+      <allowed_value/>
+    </validator_field>
+    <validator_field>
+      <name>LAST EXEC FC</name>
+      <validation_name>last_exec_fc</validation_name>
+      <max_length/>
+      <min_length/>
+      <null_allowed>N</null_allowed>
+      <only_null_allowed>N</only_null_allowed>
+      <only_numeric_allowed>Y</only_numeric_allowed>
+      <data_type>Number</data_type>
+      <data_type_verified>Y</data_type_verified>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <max_value/>
+      <min_value>0</min_value>
+      <start_string/>
+      <end_string/>
+      <start_string_not_allowed/>
+      <end_string_not_allowed/>
+      <regular_expression/>
+      <regular_expression_not_allowed/>
+      <error_code>AC003</error_code>
+      <error_description/>
+      <is_sourcing_values>N</is_sourcing_values>
+      <sourcing_step/>
+      <sourcing_field/>
+      <allowed_value/>
+    </validator_field>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>Microsoft Excel input</name>
     <type>ExcelInput</type>
@@ -518,7 +640,7 @@
     <rownumfield/>
     <sheetfield>Delivery</sheetfield>
     <filefield/>
-    <limit>0</limit>
+    <limit>100</limit>
     <encoding/>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <accept_filenames>N</accept_filenames>
@@ -725,6 +847,30 @@
         <group/>
       </field>
       <field>
+        <name>LIMIT FC</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>LIMIT EXEC DT</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
         <name>A/C_1</name>
         <type>String</type>
         <length>-1</length>
@@ -856,18 +1002,6 @@
         <decimal/>
         <group/>
       </field>
-      <field>
-        <name>Heavy Maintenance</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
     </fields>
     <sheets>
       <sheet>
@@ -918,7 +1052,7 @@
     <rootUriNameFieldName/>
     <extensionFieldName/>
     <sizeFieldName/>
-    <spreadsheet_type>SAX_POI</spreadsheet_type>
+    <spreadsheet_type>POI</spreadsheet_type>
     <password>Encrypted </password>
     <attributes/>
     <cluster_schema/>
@@ -931,114 +1065,6 @@
     <GUI>
       <xloc>304</xloc>
       <yloc>336</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Table output</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>EADP_POSTGRES</connection>
-    <schema>staging</schema>
-    <table>stg_aircraft_maintenance</table>
-    <commit>1000</commit>
-    <truncate>N</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-      <field>
-        <column_name>item</column_name>
-        <stream_name>ITEM</stream_name>
-      </field>
-      <field>
-        <column_name>description</column_name>
-        <stream_name>DESCRIPTION</stream_name>
-      </field>
-      <field>
-        <column_name>block</column_name>
-        <stream_name>BLOCK</stream_name>
-      </field>
-      <field>
-        <column_name>skill</column_name>
-        <stream_name>SKILL</stream_name>
-      </field>
-      <field>
-        <column_name>mxh_est</column_name>
-        <stream_name>Mxh EST.</stream_name>
-      </field>
-      <field>
-        <column_name>per_fh</column_name>
-        <stream_name>PER FH</stream_name>
-      </field>
-      <field>
-        <column_name>per_fc</column_name>
-        <stream_name>PER FC</stream_name>
-      </field>
-      <field>
-        <column_name>per_calend</column_name>
-        <stream_name>PER CALEND</stream_name>
-      </field>
-      <field>
-        <column_name>task_by_block</column_name>
-        <stream_name>TASK BY BLOCK</stream_name>
-      </field>
-      <field>
-        <column_name>last_exec_insp</column_name>
-        <stream_name>LAST EXEC INSP</stream_name>
-      </field>
-      <field>
-        <column_name>last_exec_fh</column_name>
-        <stream_name>LAST EXEC FH</stream_name>
-      </field>
-      <field>
-        <column_name>last_exec_fc</column_name>
-        <stream_name>LAST EXEC FC</stream_name>
-      </field>
-      <field>
-        <column_name>last_exec_dt</column_name>
-        <stream_name>LAST EXEC DT</stream_name>
-      </field>
-      <field>
-        <column_name>limit_insp</column_name>
-        <stream_name>LIMIT INSP</stream_name>
-      </field>
-      <field>
-        <column_name>limit_fh</column_name>
-        <stream_name>LIMIT FH</stream_name>
-      </field>
-      <field>
-        <column_name>aircraft_id</column_name>
-        <stream_name>A/C</stream_name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>768</xloc>
-      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1056,115 +1082,93 @@
     <fields>
       <field>
         <name>A/C</name>
-        <rename/>
       </field>
       <field>
         <name>ITEM</name>
-        <rename/>
       </field>
       <field>
         <name>DESCRIPTION</name>
-        <rename/>
       </field>
       <field>
         <name>BLOCK</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL</name>
-        <rename/>
       </field>
       <field>
         <name>Mxh EST.</name>
-        <rename/>
       </field>
       <field>
         <name>PER FH</name>
-        <rename/>
       </field>
       <field>
         <name>PER FC</name>
-        <rename/>
       </field>
       <field>
         <name>PER CALEND</name>
-        <rename/>
       </field>
       <field>
         <name>TASK BY BLOCK</name>
-        <rename/>
       </field>
       <field>
         <name>LAST EXEC INSP</name>
-        <rename/>
       </field>
       <field>
         <name>LAST EXEC FH</name>
-        <rename/>
       </field>
       <field>
         <name>LAST EXEC FC</name>
-        <rename/>
       </field>
       <field>
         <name>LAST EXEC DT</name>
-        <rename/>
       </field>
       <field>
         <name>LIMIT INSP</name>
-        <rename/>
       </field>
       <field>
         <name>LIMIT FH</name>
-        <rename/>
+      </field>
+      <field>
+        <name>LIMIT FC</name>
+      </field>
+      <field>
+        <name>LIMIT EXEC DT</name>
       </field>
       <field>
         <name>A/C_1</name>
-        <rename/>
       </field>
       <field>
         <name>Delivery date</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL TYPE</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL GI</name>
-        <rename/>
       </field>
       <field>
         <name>BLOCK_1</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL MDO</name>
-        <rename/>
       </field>
       <field>
         <name>RATIO</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL GI_1</name>
-        <rename/>
       </field>
       <field>
         <name>BLOCK_2</name>
-        <rename/>
       </field>
       <field>
         <name>SKILL MDO_1</name>
-        <rename/>
       </field>
       <field>
         <name>RATIO_1</name>
-        <rename/>
       </field>
       <field>
-        <name>Heavy Maintenance</name>
-        <rename/>
+        <name>Delivery</name>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -1440,6 +1444,40 @@
         <storage_type/>
       </meta>
       <meta>
+        <name>LIMIT FC</name>
+        <rename>LIMIT FC</rename>
+        <type>None</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>LIMIT EXEC DT</name>
+        <rename>LIMIT EXEC DT</rename>
+        <type>None</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
         <name>A/C_1</name>
         <rename>A/C_1</rename>
         <type>None</type>
@@ -1627,10 +1665,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Heavy Maintenance</name>
-        <rename>Heavy Maintenance</rename>
+        <name>Delivery</name>
+        <rename>Delivery</rename>
         <type>None</type>
-        <length>-2</length>
+        <length>250</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1653,12 +1691,549 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>528</xloc>
+      <xloc>544</xloc>
       <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>EADP_POSTGRES</connection>
+    <schema>staging</schema>
+    <table>stg_aircraft_maintenance</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>item</column_name>
+        <stream_name>ITEM</stream_name>
+      </field>
+      <field>
+        <column_name>description</column_name>
+        <stream_name>DESCRIPTION</stream_name>
+      </field>
+      <field>
+        <column_name>block</column_name>
+        <stream_name>BLOCK</stream_name>
+      </field>
+      <field>
+        <column_name>skill</column_name>
+        <stream_name>SKILL</stream_name>
+      </field>
+      <field>
+        <column_name>mxh_est</column_name>
+        <stream_name>Mxh EST.</stream_name>
+      </field>
+      <field>
+        <column_name>per_fh</column_name>
+        <stream_name>PER FH</stream_name>
+      </field>
+      <field>
+        <column_name>per_fc</column_name>
+        <stream_name>PER FC</stream_name>
+      </field>
+      <field>
+        <column_name>per_calend</column_name>
+        <stream_name>PER CALEND</stream_name>
+      </field>
+      <field>
+        <column_name>task_by_block</column_name>
+        <stream_name>TASK BY BLOCK</stream_name>
+      </field>
+      <field>
+        <column_name>last_exec_insp</column_name>
+        <stream_name>LAST EXEC INSP</stream_name>
+      </field>
+      <field>
+        <column_name>last_exec_fh</column_name>
+        <stream_name>LAST EXEC FH</stream_name>
+      </field>
+      <field>
+        <column_name>last_exec_fc</column_name>
+        <stream_name>LAST EXEC FC</stream_name>
+      </field>
+      <field>
+        <column_name>last_exec_dt</column_name>
+        <stream_name>LAST EXEC DT</stream_name>
+      </field>
+      <field>
+        <column_name>limit_insp</column_name>
+        <stream_name>LIMIT INSP</stream_name>
+      </field>
+      <field>
+        <column_name>limit_fh</column_name>
+        <stream_name>LIMIT FH</stream_name>
+      </field>
+      <field>
+        <column_name>aircraft_id</column_name>
+        <stream_name>A/C</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>/Users/meetpatel/Desktop/Data Engineering Capstone Project/bronze/ingestion/errors/aircraft_maintenance_errors</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>A/C</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ITEM</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DESCRIPTION</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>BLOCK</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Mxh EST.</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PER FH</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PER FC</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PER CALEND</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TASK BY BLOCK</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LAST EXEC INSP</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LAST EXEC FH</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LAST EXEC FC</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LAST EXEC DT</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LIMIT INSP</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LIMIT FH</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LIMIT FC</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>LIMIT EXEC DT</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>A/C_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Delivery date</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL TYPE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL GI</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>BLOCK_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL MDO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>RATIO</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL GI_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>BLOCK_2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SKILL MDO_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>RATIO_1</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Delivery</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>250</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step_error_handling>
+    <error>
+      <source_step>Data validator</source_step>
+      <target_step>Text file output</target_step>
+      <is_enabled>Y</is_enabled>
+      <nr_valuename/>
+      <descriptions_valuename/>
+      <fields_valuename/>
+      <codes_valuename/>
+      <max_errors/>
+      <max_pct_errors/>
+      <min_pct_rows/>
+    </error>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
